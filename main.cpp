@@ -8,6 +8,7 @@ void help() {
     std::cout << "  -L \t - to lower case \n";
     std::cout << "  -U \t - to upper case \n";
     std::cout << "  -G \t - toggle case \n";
+    std::cout << "  -R \t - random case \n";
 }
 
 
@@ -47,7 +48,10 @@ int main(int argc, char* argv[])
     else if (strcmp(argv[1], "-T") == 0) {
         title_case(inFile, outFile);
     }
-    else {
+    else if (strcmp(argv[1], "-R") == 0) {
+        random_case(inFile, outFile);
+    }
+     else {
         help();
     }
 
