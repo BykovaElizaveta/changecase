@@ -17,6 +17,6 @@ jobs:
       run: g++ main.cpp changecase.cpp -o changecase
     - name: test
       run: 
-          chmod u+x test.sh | 
+          chmod u+x test.sh 
           ./test.sh
    
